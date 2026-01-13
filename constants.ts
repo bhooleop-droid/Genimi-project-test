@@ -47,4 +47,4 @@ export const INITIAL_SCRIPTS: ScriptData[] = [
   }
 ];
 
-export const ADMIN_PASSWORD = "admin"; // In a real app, this would be backend validated
+export const ADMIN_PASSWORD = import.meta.env?.VITE_ADMIN_PASSWORD || "admin";
